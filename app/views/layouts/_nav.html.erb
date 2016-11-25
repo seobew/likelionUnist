@@ -1,0 +1,40 @@
+<!-- Nav part -->
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse affix-top navbar-trans" role="navigation">
+  <div class="container-fluid">
+    <div class="nav">
+      <a href="#page-top" class="page-scroll" id="title_logo">
+          <img src="/uniwebsite/logo/logo.png" id="animation">
+      </a>
+      <!--<a class="navbar-nav navbar-brand page-scroll" data-section="#"> 멋쟁이사자처럼 at UNIST</a>-->
+      <ul class="nav navbar-nav navbar-right" id="active_test">
+        <li class="hidden"><a href= "#page-top"></a></li>
+        <% if user_signed_in? %>
+          <li><a class="page-scroll" href="#member" data-section="#member">STACK</a></li>
+          <li><a class="page-scroll" href="#member" data-section="#member">VIDEO</a></li>
+          <li><a class="page-scroll" href="#member" data-section="#member">FREE</a></li>
+          <li><a class="page-scroll" href="#service" data-section="#service">HISTORY</a></li>
+          <li>
+            <a data-section="#" class="dropdown-toggle" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
+              ACCOUNT <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <li><%= link_to "SETTINGS", edit_user_registration_path(current_user) %></li>
+              <li class="divider"></li>
+              <li>
+              <%= link_to "LOGOUT", destroy_user_session_path, method: "delete" %>
+              </li>
+            </ul>
+          </li>
+        <% else %>
+          <li><a class="page-scroll" href="#apply" data-section="#apply">APPLY</a></li>
+          <li><a class="page-scroll" href="#about" data-section="#about">ABOUT</a></li>
+          <li><a class="page-scroll" href="#schedule" data-section="#schedule">SCHEDULE</a></li>
+          <li><a class="page-scroll" href="#member" data-section="#member">MEMBER</a></li>
+          <li><a class="page-scroll" href="#service" data-section="#service">SERVICE</a></li>
+          <li> <%= link_to 'LOGIN', new_user_session_path %></li>
+        <% end %>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

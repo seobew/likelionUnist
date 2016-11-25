@@ -1,0 +1,5 @@
+<p>환영합니다 <%= @email %>님</p>
+
+<p>멋쟁이 사자처럼 유니스트 회원가입을 위해 아래에 링크를 클릭해주세요.</p>
+
+<p><%= link_to '유니스트 재학생 인증확인', confirmation_url(@resource, confirmation_token: @token) %></p>

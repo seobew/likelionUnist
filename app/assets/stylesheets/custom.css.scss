@@ -1,0 +1,829 @@
+@import url(https://fonts.googleapis.com/css?family=Economica);
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/* settings */
+section {
+  padding-top: 80px;
+}
+
+hr {
+  max-width: 60px;
+  .unist{
+    border-color:#fff;
+  }
+}
+
+p {
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  .text-faded{
+    color: rgba(255, 255, 255,.7);
+  }
+}
+
+/* html, body */
+html, body {
+  height: 100%;
+  font-family: 'Economica', sans-serif;
+}
+
+.wrapper{
+  width: 100%;
+  height: 100%;
+}
+/* devise body */
+.padding_body {
+  min-height: 100%;
+}
+
+/* header */
+// default nav values // basic settings
+.container-fluid {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.navbar {
+  height: 80px;
+}
+
+.navbar-default {
+  border-width: 0 0 1px;
+  #animation{
+    margin-top: 10px;
+    line-height: 80px;
+    height: 60px;
+  }
+  .navbar-nav{
+    cursor: pointer;
+    li{
+      a{
+        transition:background .3s ease-in-out;
+        padding: 0;
+        margin:0 20px;
+      }
+      a:hover{
+        color: #63B9C0;
+      }
+    }
+  }
+}
+
+.navbar-right {
+  line-height: 80px;
+}
+
+.nav {
+  ul {
+    li {
+      text-align: center;
+    }
+  }
+}
+
+.navbar-inverse .navbar-nav > .open > a:hover {
+  background-color: #fff;
+  color: #64b9c0;
+}
+
+// 맨위에 있을때 css
+.navbar-inverse {
+  background-color: #fff;
+  border-color: #fff;
+  .navbar-nav{
+    .open {
+      a {
+        background-color: #fff;
+        color: #64b9c0;
+      }
+    }
+    .dropdown-menu {
+      background-color: #fff;
+      min-width: 100px;
+      width: 110px;
+      padding: 0;
+      li {
+        float: none;
+        &.divider {
+          width: 108px;
+          background-color: #8FCDD2;
+          margin: 0;
+        }
+        a {
+          line-height: 50px;
+          font-size: 13px;
+        }
+      }
+    }
+    font-size: 20px;
+    font-weight: normal;
+    li{
+      a{
+        font-size: 15px;
+        font-weight: 800;
+        color: #001357;
+        line-height: 80px;
+        &.login {
+          color: #3BBCC3;
+        }
+      }
+    }
+  }
+}
+
+// 아래로 내릴때 css
+.navbar-small{
+  background-color: #fff;
+  color: #000;
+  a.active{
+    border-bottom: 3px solid #3BBCC3;
+    color:white;
+  }
+  li{
+    a{
+      font-size: 15px;
+      font-weight: 800;
+      color: #001357;
+      line-height: 80px;
+      &.login {
+        color: #3BBCC3;
+      }
+    }
+  }
+}
+
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: #011B54;
+}
+
+/* header */
+header {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-image: url('/uniwebsite/img/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  .header-content {
+    height: 100%;
+    .header-content-inner {
+      display: table;
+      width: 100%;
+      height: 100%;
+      .white_box {
+        display: table-cell;
+        vertical-align: middle;
+        width: 100%;
+        background-color: transparent;
+        padding-top: 80px;
+        p {
+          color: rgba(255,255,255,7);
+          font-size: 25px;
+        }
+        .f1 {
+          .font {
+            font-size: 35px;
+          }
+        }
+        .f2 {
+          .font {
+            font-size: 30px;
+          }
+        }
+        .font {
+          color: white;
+          font-size: 40px;
+          margin-bottom: 30px;
+        }
+        .typed-cursor {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+/* sign up now button */
+.button {
+  text-align: center;
+  margin-bottom: 5%;
+  .btn{
+    background-color: #0C1E5F;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    width: 15%;
+    a{
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: -2px;
+    }
+    &.btn-info{
+      border-color: #fff;
+      width: 25%;
+      height: 45px;
+    }
+  }
+}
+
+/* apply page */
+.bg-apply {
+  background-color: white;
+  color: #474547;
+  .apply_body {
+    padding: 5% 0;
+    .apply_container {
+      margin: 0 5%;
+      text-align: center;
+      .section-heading {
+        color: #000F55;
+        margin: 30px 0;
+      }
+      .text-faded {
+        white-space: nowrap;
+      }
+      .light{
+        border: 2px solid orange;
+      }
+      img {
+        width: 15%;
+      }
+    }
+  }
+}
+
+.button_image {
+  margin: 35px 0;
+}
+
+/* about page */
+.about_intro {
+  img {
+    width: 100%;
+  }
+}
+
+.about_body {
+  margin-top: 80px;
+}
+
+.about_container {
+  width: 100%;
+  padding: 0 5%;
+  display: inline-block;
+  .about-row {
+    width: 100%;
+    display: inline-block;
+    .about-box {
+      h1 {
+        font-size: 25px;
+        font-weight: 700;
+      }
+      width: 33%;
+      float: left;
+      overflow: hidden;
+      text-align: center;
+      .image_box {
+        margin: 20px 0;
+        img {
+          width: 200px;
+        }
+      }
+      .intro-row {
+        p {
+          letter-spacing: -1px;
+          font-size: 15px;
+          margin-bottom: 0px;
+          font-weight: lighter;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+}
+/* schedule page */
+.schdule_intro {
+  img {
+    width: 100%;
+  }
+}
+.schedule {
+  padding: 0 25%;
+  padding-top: 80px;
+  img {
+    width: 100%;
+  }
+}
+
+/* Member page */
+.member_intro {
+  height: 440px;
+  background-color: #FBF583;
+  img {
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.bg-member{
+  .member_body{
+    padding: 5%;
+    padding-top: 80px;
+  }
+  span{
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+}
+
+.member-wrapper {
+  display: inline-block;
+  width: 100%;
+  .member-row {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 50px;
+    .member-box {
+      width: 33%;
+      text-align: center;
+      padding: 0 3%;
+      .member-unist {
+        margin-bottom: 20px;
+      }
+      .image_box {
+        width: 200px;
+        height: 200px;
+        background-image: url('/woo.png');
+        background-position: center;
+        border-radius: 50em;
+        margin: 0 auto;
+        background-size: cover;
+      }
+      .image_box2 {
+        width: 200px;
+        height: 200px;
+        background-image: url('/hansol.jpeg');
+        background-position: center;
+        border-radius: 50em;
+        margin: 0 auto;
+        background-size: cover;
+      }
+      .image_box3 {
+        width: 200px;
+        height: 200px;
+        background-image: url('/hyeongmin.png');
+        background-position: center;
+        border-radius: 50em;
+        margin: 0 auto;
+        background-size: cover;
+      }
+      .image_box4 {
+        width: 200px;
+        height: 200px;
+        background-image: url('/iseob.jpeg');
+        background-position: center;
+        border-radius: 50em;
+        margin: 0 auto;
+        background-size: cover;
+      }
+      .image_box5 {
+        width: 200px;
+        height: 200px;
+        background-image: url('/young.jpeg');
+        background-position: center;
+        border-radius: 50em;
+        margin: 0 auto;
+        background-size: cover;
+      }
+      .image_box6 {
+        width: 200px;
+        height: 200px;
+        background-image: url('/qmark.png');
+        background-position: center;
+        border-radius: 50em;
+        margin: 0 auto;
+        background-size: cover;
+      }
+      .intro-box {
+        display: inline-block;
+        margin-top: 10px;
+        width: 100%;
+        p {
+          margin-bottom: 0;
+          color: #333333;
+        }
+        .intro-row {
+          display: inline-block;
+          width: 80%;
+          .class {
+            width: 50%;
+            display: inline-block;
+            float: left;
+            overflow: hidden;
+            text-align: center;
+            margin-top: 9px;
+          }
+          .name {
+            width: 50%;
+            display: inline-block;
+            float: right;
+            overflow: hidden;
+            text-align: center;
+            span {
+              font-weight: 700;
+              font-size: 25px;
+            }
+          }
+          .link {
+            width: 100%;
+            height: 30px;
+            display: inline-block;
+            text-align: center;
+            img {
+              height: 100%;
+              border-radius: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.type1 {
+  float: left;
+  overflow: hidden;
+}
+
+/* service page */
+#service {
+  .service_intro {
+    img {
+      width: 100%;
+    }
+  }
+  .padding_body {
+    padding: 7% 10%;
+  }
+  .service-box {
+    width: 33%;
+    display: inline-block;
+    vertical-align: top;
+    .service-each {
+      padding: 0 5%;
+      .image_box {
+        width: 100%;
+        height: 250px;
+        margin-bottom: 20px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .intro-box {
+        .intro-row {
+          margin-bottom: 10px;
+          p {
+            font-size: 15px;
+            margin-bottom: 0;
+          }
+          .name {
+            display: inline-block;
+            margin-right: 10px;
+            h1 {
+              font-size: 20px;
+              font-weight: 700;
+              margin-top: 0;
+            }
+            p {
+              font-size: 13px;
+              color: #8D94FD;
+            }
+          }
+          .clip {
+            display: inline-block;
+            vertical-align: top;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* header left */
+
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.2em;
+  color: #fff;
+  padding-top: 50px;
+  font-weight: normal;
+}
+
+body {
+  width: 100%;
+  position: relative;
+  min-height: 100%;
+  height: 100%;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  font-family: Noto Sans CJK KR;
+  footer {
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    line-height: 50px;
+    text-align: center;
+    bottom: -100px;
+    background-color: #464646;
+    color: white;
+    .footer_content {
+      text-align: center;
+      padding-top: 25px;
+      p{
+        float:left;
+        position:absolute;
+        left:36%;
+        padding-top:15px;
+      }
+      .logo_text_svg {
+        width: 20em;
+      }
+    }
+    ul {
+      float: right;
+      padding-right: 20px;
+      img {
+        width: 40px;
+      }
+    }
+    .logo_text {
+      float: left;
+      padding-left: 20px;
+      @media (min-width:480px)
+      {
+      }
+    }
+  }
+}
+
+/* 로그인 페이지*/
+.box{
+  text-align: center;
+  width: 40%;
+  margin: 0 auto;
+  padding: 5% 0;
+}
+
+.form{
+  padding: 0px 0px 14px 0px;
+}
+
+.signup_title{
+  margin:0 0 10px;
+  color: #F79A1F;
+  font-size: 41px;
+  font-weight: 400;
+}
+
+#user_name{
+  width: 80%;
+  height: 40px;
+  border: 1.5px solid #fff;
+  margin: -36px 0 20px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  font-size: medium;
+  color: white;
+}
+#user_name:hover {
+  border-color: orange;
+}
+
+#user_email{
+  width: 80%;
+  height: 40px;
+  border: 1.5px solid  #fff;
+  margin:0 0 20px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  font-size: medium;
+  color: white;
+}
+#user_email:hover {
+  border-color: orange;
+}
+
+#user_password{
+  width: 80%;
+  height: 40px;
+  border: 1.5px solid  #fff;
+  margin:0 0 20px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  font-size: medium;
+  color: white;
+}
+#user_password:hover {
+  border-color: orange;
+}
+
+
+#user_password_confirmation{
+  width: 80%;
+  height: 40px;
+  border: 1.5px solid #fff;
+  padding: 10px 20px;
+  margin:0 0 20px;
+  box-sizing: border-box;
+  font-size: medium;
+  color: white;
+}
+#user_password_confirmation:hover {
+  border-color: orange;
+}
+#user_current_password{
+  width: 80%;
+  height: 40px;
+  border: 1.5px solid #fff;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  font-size: medium;
+  color: white;
+}
+#user_current_password:hover {
+  border-color: orange;
+}
+
+  .button_login{
+    cursor: pointer;
+    background: #777777;
+    width: 80%;
+    border: 0;
+    padding: 10px 15px;
+    color: #ffffff;
+    -webkit-transition: 0.3s ease;
+    transtion: 0.3s ease;
+    margin: 0 0 15px;
+
+    &:hover {
+      background-color: #F79A1F;
+  }
+}
+
+.remember{
+  margin:0 0 10px;
+  color: white;
+}
+
+.icon{
+  margin: 0 0 10px;
+}
+
+.fa fa-user-plus{
+  color: white;
+}
+
+.background {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+
+  .blur {
+    background-image: url("/03.jpg");
+    background-size: cover;
+    background-position: center;
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+  .mask{
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+}
+.background_signup {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+
+  .blur {
+    background-image: url("/02.jpg");
+    background-size: cover;
+    background-position: center;
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+  .mask{
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+}
+.background_change{
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+
+  .blur {
+    background-image: url("/01.jpg");
+    background-size: cover;
+    background-position: center;
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+  .mask{
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+}
+.logo2{
+  padding-top: 20%;
+}
+
+.logo_text{
+  padding-bottom: 15px;
+}
+
+.form_signup{
+  padding-bottom:2%;
+}
+
+.form_edit{
+  padding: 15% 5%;
+}
+
+#edit{
+  color: #F79A1F;
+  font-size: 40px;
+  padding-bottom: 10px;
+}
+
+.back-position{
+  padding-top:0%;
+  min-height: 100%;
+  position: relative;
+}
+
+.back-position-signup{
+  padding-top:0%;
+  min-height: 100%;
+  position: relative;
+}
+
+.logo3{
+  padding-top: 17%;
+}
+#modal1{
+  overflow: hidden;
+  position: fixed;
+  right: 0;
+  left: 0;
+  max-height: 35%;
+}
+// 비밀번호 찾기 모달 //
+.modal_header{
+  background-color: #8BAAF3;
+  padding-top: 14px;
+  padding-left: 14px;
+  padding-bottom: 1px;
+  margin: -27px;
+  margin-bottom: 9px;
+}
+.modal-content{
+  padding-bottom: 50px;
+  background-color: #F9F5F0;
+  height: 100%;
+}
+#find_password{
+  border: 1.5px solid #253062;
+  width: 80%;
+  height: 40px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  font-size: medium;
+  color: #253062;
+}

@@ -1,0 +1,19 @@
+<div class="modal_header">
+  <h2>비밀번호를 잊어버리셨나요?</h2>
+</div>
+<h6>비밀번호 재설정에 필요한 이메일을 입력하세요</h6>
+<div class="modal_mycontent">
+  <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+    <div class="modal_body">
+      <div class="field">
+       <%= f.label :email %><br/>
+        <%= f.email_field :email, autofocus: true ,"id":"find_password", :class=> "find_passwordbtn tooltipped", "data-position": "top", "data-delay": "50", "data-tooltip": "입력하신 메일로 비밀번호 변경 메일을 보냅니다" %>
+      </div>
+    </div>
+
+    <div class="actions">
+      <%= f.submit "메일 전송 확인", :class =>"waves-effect waves-light btn" %>
+      <a href="/users/sign_in" class="waves-effect waves-light btn">닫기</a>
+    </div>
+  <% end %>
+</div>

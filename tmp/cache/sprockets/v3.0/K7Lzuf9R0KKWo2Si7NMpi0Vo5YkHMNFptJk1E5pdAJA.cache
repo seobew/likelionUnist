@@ -1,0 +1,9 @@
+I"‡(function() {
+  $(window).on({
+    'scroll': function() {
+      return console.log($(window).scrollTop());
+    }
+  });
+
+}).call(this);
+:ET

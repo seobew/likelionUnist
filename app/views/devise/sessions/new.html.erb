@@ -1,0 +1,53 @@
+<div class="back-position">
+<div class="background"> 
+  <div class="blur"></div>
+  <div class="mask"></div>
+</div>
+  <div class="padding_body">
+    <div class="box">
+      <div class="logo2">
+        <img src="/logo.svg">
+      </div>
+      <div class="form">
+        <div class="logo_text">
+          <h2><img src= "/logo_text.svg"></h2>
+        </div>
+        <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+          <div class="field">
+            <%= f.email_field :email, autofocus: true, placeholder: 'Email Address' %>
+          </div>
+
+          <div class="field">
+            <%= f.password_field :password, autocomplete: "off", placeholder: 'Password' %>
+          </div>
+
+          <div class="actions">
+            <%= f.submit "Log in", :class => "button_login" %>
+          </div>
+
+          <% if devise_mapping.rememberable? %>
+            <div class="field">
+              <%= f.check_box :remember_me %>
+              <%= f.label :remember_me, :class => "remember" %>
+            </div>
+          <% end %>
+
+        <% end %>
+        <div class="icon">
+          <span>
+            <a href="/users/sign_up", method="post"><i class="fa fa-user-plus" style=" color: white;"> Sign up</i></a>&nbsp;&nbsp;
+            <!-- modal trigger -->
+            <a class="#!" id="link" href="#modal1"><i class="fa fa-question-circle" style=" color: white;">Forgot password?</i></a>
+          </span><br>
+        </div>
+        <a class="return" href="#" onclick="history.back()"> <i class="fa fa-undo fa-lx" style="color: white;">돌아가기</i></a>
+      </div>
+    </div>
+  </div>
+</div>
+ <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+     <%= render 'users/registrations/registrations.html.erb' %>     
+    </div>
+  </div>

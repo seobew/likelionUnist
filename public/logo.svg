@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_flows "http://ns.adobe.com/Flows/1.0/">
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+]>
+<svg version="1.1" id="레이어_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="115px" height="115px" viewBox="0 0 115 115" style="enable-background:new 0 0 115 115;"
+	 xml:space="preserve">
+<g>
+	<circle style="fill:#FFFFFF;" cx="57.5" cy="57.5" r="57.5"/>
+	<g>
+		<g>
+			<path style="fill:#F4901D;" d="M81.7,16.5H33.3L9,58.5l24.2,42h48.5l24.2-42L81.7,16.5z M57.5,95.3L25.6,76.9V40.1l31.9-18.4
+				l31.9,18.4l0,36.8L57.5,95.3z"/>
+			<polygon style="fill:#F4901D;" points="67.1,47.9 67.1,56.7 80,47.9 			"/>
+			<polygon style="fill:#F4901D;" points="47.9,47.9 47.9,56.7 35,47.9 			"/>
+			<polygon style="fill:#F4901D;" points="67.6,67.1 57.5,74.7 47.4,67.1 			"/>
+			<rect x="67.1" y="47.9" style="fill:#F4901D;" width="0.5" height="19.2"/>
+			<rect x="47.4" y="47.9" style="fill:#F4901D;" width="0.5" height="19.2"/>
+		</g>
+		<g>
+			<polygon style="fill:#F8AD3F;" points="33.3,16.5 25.6,40.1 9,58.5 			"/>
+			<polygon style="fill:#F8AD3F;" points="9,58.5 25.6,76.9 33.3,100.5 			"/>
+			<polygon style="fill:#F8AD3F;" points="81.7,16.5 89.4,40.1 106,58.5 			"/>
+			<polygon style="fill:#F8AD3F;" points="33.2,16.5 57.5,21.7 81.7,16.5 			"/>
+			<polygon style="fill:#F8AD3F;" points="33.2,100.5 57.5,95.3 81.7,100.5 			"/>
+			<polygon style="fill:#F8AD3F;" points="106,58.5 89.4,76.9 81.7,100.5 			"/>
+		</g>
+		<rect x="9" y="16.5" style="fill:none;" width="97" height="84"/>
+	</g>
+</g>
+</svg>

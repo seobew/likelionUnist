@@ -1,0 +1,46 @@
+<div class="back-position">
+<div class="background">
+  <div class="blur"></div>
+  <div class="mask"></div>
+</div>
+<div class="padding_body">
+<div class="box">
+  <div class="form_edit">
+<h2 id="edit">아이디 수정</h2><br>
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+  <%= devise_error_messages! %>
+  <div class="field">
+    <%= f.text_field :name, autofocus: true, readonly: true %>
+  </div>
+
+  <div class="field">
+    <%= f.email_field :email, autofocus: true, readonly: true %>
+  </div>
+
+  <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+    <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
+  <% end %>
+
+  <div class="field">
+    <%= f.password_field :password, autocomplete: "off", placeholder: "Password(minimum8)" %>
+  </div>
+
+  <div class="field">
+    <%= f.password_field :password_confirmation, autocomplete: "off", placeholder: "Password_confrimation" %>
+  </div>
+
+  <div class="field">
+    <%= f.password_field :current_password, autocomplete: "off", placeholder: "Current password" %>
+  </div>
+  <br>
+  <div class="actions">
+    <%= f.submit "Update", :class => "button_login" %>
+  </div>
+<% end %>
+
+<a class="account_delete"><i class="fa fa-trash-o fa-2x" style="color: white;"> 계정삭제</i></a><br><br>
+<a href="#" onclick="history.back()"><i class="fa fa-undo fa-lx" style="color: white;">돌아가기</i></a>
+    </div>
+  </div>
+</div>
+</div>

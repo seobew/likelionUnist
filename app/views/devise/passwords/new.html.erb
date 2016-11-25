@@ -1,0 +1,15 @@
+<h2>비밀번호를 잊어버리셨나요?</h2>
+<p>비밀번호 재설정에 필요한 이메일을 입력하세요</p>
+
+<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "메일 전송 확인" %>
+  </div>
+<% end %>
+
